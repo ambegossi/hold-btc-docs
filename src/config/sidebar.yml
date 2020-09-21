@@ -1,24 +1,10 @@
 # Sidebar navigation
 
-- label: 'Introduction'
+- label: 'Introdução ao projeto'
   link: '/'
-- label: 'Getting started'
+- label: 'Iniciando nas compras'
   link: '/getting-started'
-- label: Usage
+- label: 'Projeto HOLD BTC'
   items:
-    - label: 'Creating docs'
-      link: '/usage/creating-docs'
-    - label: 'Navigation'
-      link: '/usage/navigation'
-    - label: 'Shadowing'
-      link: '/usage/shadowing'
-- label: More
-  items:
-    - label: FAQ
-      link: /faq
-    - label: Changelog
-      link: /changelog
-- label: Community
-  items:
-    - label: 'Github'
-      link: https://github.com/rocketseat/gatsby-themes
+    - label: 'Grupo no Telegram'
+      link: 'https://t.me/holdbtc100'

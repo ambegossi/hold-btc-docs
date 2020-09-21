@@ -4,7 +4,7 @@ module.exports = {
     defaultTitle: `HOLD BTC 100`,
     siteTitleShort: `HOLD BTC`,
     siteDescription: `Projeto HOLD BTC, vamos aproveitar a valorização no longo prazo`,
-    siteUrl: `https://rocketdocs.netlify.com`,
+    siteUrl: `https://docsholdbtc.netlify.com`,
     siteAuthor: `@_felipesuri`,
     siteLanguage: `pt-br`,
     themeColor: `#8257E6`,
@@ -16,8 +16,7 @@ module.exports = {
       options: {
         configPath: `src/config`,
         docsPath: `src/docs`,
-        githubUrl: `https://github.com/rocketseat/gatsby-themes`,
-        baseDir: `examples/gatsby-theme-docs`,
+        githubUrl: `https://github.com/felipesuri/docs-hold-btc`,
       },
     },
     {
@@ -32,17 +31,11 @@ module.exports = {
       },
     },
     `gatsby-plugin-sitemap`,
-    {
-      resolve: `gatsby-plugin-google-analytics`,
-      options: {
-        // trackingId: ``,
-      },
-    },
     `gatsby-plugin-remove-trailing-slashes`,
     {
       resolve: `gatsby-plugin-canonical-urls`,
       options: {
-        siteUrl: `https://rocketdocs.netlify.com`,
+        siteUrl: `https://docsholdbtc.netlify.com`,
       },
     },
     `gatsby-plugin-offline`,
