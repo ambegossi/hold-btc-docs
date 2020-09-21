@@ -1,13 +1,12 @@
 module.exports = {
   siteMetadata: {
-    siteTitle: `Rocket Docs`,
-    defaultTitle: `Rocket Docs`,
-    siteTitleShort: `Rocket Docs`,
-    siteDescription: `Out of the box Gatsby Theme for creating documentation websites easily and quickly`,
+    siteTitle: `HOLD BTC 100`,
+    defaultTitle: `HOLD BTC 100`,
+    siteTitleShort: `HOLD BTC`,
+    siteDescription: `Projeto HOLD BTC, vamos aproveitar a valorização no longo prazo`,
     siteUrl: `https://rocketdocs.netlify.com`,
-    siteAuthor: `@rocketseat`,
-    siteImage: `/banner.png`,
-    siteLanguage: `en`,
+    siteAuthor: `@_felipesuri`,
+    siteLanguage: `pt-br`,
     themeColor: `#8257E6`,
     basePath: `/`,
   },
@@ -24,8 +23,8 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `Rocketseat Gatsby Themes`,
-        short_name: `RS Gatsby Themes`,
+        name: `HOLD BTC`,
+        short_name: `BOLD BTC`,
         start_url: `/`,
         background_color: `#ffffff`,
         display: `standalone`,
@@ -48,4 +47,4 @@ module.exports = {
     },
     `gatsby-plugin-offline`,
   ],
-};
+}
