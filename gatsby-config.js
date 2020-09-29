@@ -30,6 +30,13 @@ module.exports = {
         icon: `static/favicon.png`,
       },
     },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `uploads`,
+	path: `${__dirname}/static/img`
+      },
+    },
     `gatsby-plugin-sitemap`,
     `gatsby-plugin-remove-trailing-slashes`,
     {

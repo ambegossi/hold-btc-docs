@@ -6,6 +6,8 @@
   link: '/corretoras'
 - label: 'Artigos'
   items:
+    - label: 'Artigo Hold BTC 100'
+      link: '/articles/hold-btc'
     - label: 'Artigo sobre Lightning Network'
       link: '/articles/lightning-network'
 - label: 'Projeto HOLD BTC'
