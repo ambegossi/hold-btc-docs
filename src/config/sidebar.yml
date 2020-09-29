@@ -4,6 +4,10 @@
   link: '/'
 - label: 'Corretoras para comprar BTC'
   link: '/corretoras'
+- label: 'Artigos'
+  items:
+    - label: 'Artigo sobre Lightning Network'
+      link: '/articles/lightning-network'
 - label: 'Projeto HOLD BTC'
   items:
     - label: 'Grupo no Telegram'

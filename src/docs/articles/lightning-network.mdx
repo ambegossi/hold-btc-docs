@@ -1,0 +1,75 @@
+---
+title: 'Artigo básico sobre a Rede Relâmpago do Bitcoin'
+description: 'Este é um artigo sobre a Lightning Network, escrito por Nicolas Maia.'
+---
+
+[1]: https://docs.google.com/document/d/1hlQJeaEkk4wfHcl8qPxSVz6Z0DDjXj2vbpAxajBBrQk/edit	"Documento original do artigo"
+[2]: https://play.google.com/store/apps/details?id=fr.acinq.phoenix.mainnet&hl=pt_BR	"Phoenix Wallet na PlayStore"
+[3]: https://play.google.com/store/apps/details?id=io.bluewallet.bluewallet&hl=pt_BR	"Blue Wallet na Play Store"
+[4]: https://apps.apple.com/us/app/bluewallet-bitcoin-wallet/id1376878040	"Blue Wallet na Apple Store"
+[5]: https://t.me/lntxbot	"LNTX Bot no Telegram"
+
+Este artigo, foi escrito por *Nicolas Maia*, e pode ser lido no arquivo original [aqui][1],
+neste arquivo você pode, editar e modificar algo que esteja errado ou não tão explicativo,
+
+_Então, vamos para o artigo do Nicolas:_
+
+**Esse conteúdo é puramente educativo, baseado nas minhas próprias experiências.
+Utilize se quiser, com todo o cuidado e cautela. :) Busquem conhecimento.
+Compartilhem experiências. *Don’t Trust, Verify*.**
+
+## O básico sobre a Lightning Network (LN)
+
+<u>Importante: A Lightning Network não é um lugar seguro aonde manter seus fundos do Hold. O legal é manter nela só um pequeno valor, para fazer testes, experimentar e ajudar nas melhorias da rede. Utilize com cautela, por sua própria conta e risco.</u>
+
+É uma discussão famosa já entre usuário do BitCoin a falta de escalabilidade da moeda. O Bitcoin não foi criado visando escalabilidade, seu grande diferencial, dentre muitas outras coisas, é a segurança.
+Em transações tradicionais, você pode escolher entre transações baratas ou rápidas, dificilmente conseguirá as duas opções.
+
+A *Lightning Network* é um projeto que veio como solução à esse “problema”. Ela integrou à *blockchain* uma segunda camada, onde você terá a opção de realizar transações instantâneas e quase a custo zero, entre endereços *lightning*.
+O envio de fundos de uma carteira tradicional para uma carteira *lightning* se dá de maneira tradicional, com as taxas tradicionais, mais 0,1% do valor, que é cobrado pela rede *lightning*. Uma vez os fundos no seu endereço *lightning*, você pode fazer transações de valores pequenos, inimaginável para uma transação tradicional na rede do Bitcoin.
+Lembrando que a *Lightning Network* não é um lugar realmente seguro para guardar grandes valores. A escalabilidade obtida por esse rede é obtida em função de menos segurança.
+
+## Bitcoin Bounce
+
+O *Bitcoin Bounce* é um jogo para celular excelente pra passar o tempo. E de quebra ainda te dá prêmios diários diretamente na sua carteira *Lightning*.
+É um bom passatempo, bem útil para apresentar a rede *lightning* a novos usuários, sem que eles precisem depositar seus preciosos *satoshis*.
+
+Mais do que ganhar *free satoshis*, o *Bitcoin Bounce* é uma maneira de apresentar a *Lightning Network* a novos usuários, sem que eles precisem colocar seus precioso *satoshinhos* nela.
+
+## LNTX Bot
+
+<u>Utilize com ainda mais cautela que uma carteira Lightning tradicional, por sua própria conta e risco.</u>
+
+```md
+O LNTX Bot (t.me/lntxbot) é um bot para Telegram, que te permite, dentre várias funções fazer transações dentro da rede lightning entre usuários do Telegram.
+O bot cria um endereço lightning custodial, aonde você pode fazer movimentações entre contatos no Telegram.
+```
+
+Para começar a usar sua carteira da LNTX Bot e receber e enviar seus *satoshis*, é simples:
+
+É bom você possuir previamente uma carteira da *Lightning Network*, como a *Phoenix Wallet* (disponível para [Android][2]) ou a *Blue Wallet* (disponível para [Android][3] e [iOS][4]).
+
+Tendo em mãos sua carteira *lightning* principal, você pode acessar [este][5] endereço e acessar o *bot*. É importante você possuir um id de usuário no Telegram para facilitar os envios.
+
+Para enviar os fundos da sua carteira principal para sua carteira no LNTX BOT, execute os seguintes comandos no chat com o bot:
+
+1. `/invoice`
+2. `/receive_XXX_for_something` (substitua XXX pelo número de satoshis que você deseja enviar a partir de sua carteira principal. Um endereço e um QR Code será gerado. Na sua carteira Lightning, você cola esse endereço na aba de envio.)
+3. Fundos recebidos? Confirme usando o comando `/balance` para verificar seus fundos no LNTX Bot.
+   Agora, para fazer seus envios á outros usuários do Telegram, utilize os seguintes comando:
+4. Em um grupo que possua o LNTX Bot: `/tip XXX “Insira uma mensagem que queria mandar entre aspas”` (em resposta a uma mensagem), substituindo XXX pelo número de *satoshis* que quer enviar para quem publicou a mensagem que você está respondendo.
+5. No próprio bot: `/send XXX @id_do_usuario`, onde XXX é a quantidade de *satoshis*. Você pode verificar o id do usuário abrindo o contato dele no Telegram.
+6. Para enviar os fundos da sua carteira no LNTX Bot para sua carteira *lightning* principal, cole seu endereço de recebimento da carteira *lightning* principal no chat com o bot. Em seguida, ele vai te responder alguma coisa. Então responda a mensagem digitando a quantidade de *satoshis* que você deseja enviar pra sua carteira *lightning* principal.
+
+**Outras funções:**
+
+1. Usando o comando `/coinflip x y` em um grupo que possua o LTNX Bot, você gera uma espécie de loteria, onde, para entrar, o usuário deve clicar no botão enviado pelo Bot no grupo. Cada apostador entra com x satoshis, até que y usuários entrem no sorteio. Um dos usuário receberá todas as moedas que os demais apostaram.
+2. Semelhante ao *coinflip*, o comando `/giveflip x y` gera um sorteio onde os usuários não precisam entrar com uma aposta. 
+   A pessoa que gerou a loteria estará colocando o valor de x *satoshis* por todos os y usuários.
+3. `/giveaway x`, em um grupo com o LTNX Bot ativo, fornecerá x *satoshis* para o primeiro usuário que clicar na caixa de diálogo aberta pelo bot no grupo.
+4. `/gifts x`, no diálogo com o Bot, vai gerar um link, que pode ser enviado para qualquer moeda, valendo uma transação no valor de x *satoshis* dentro da rede *lightning*.
+5. No chat com o bot, você pode usar o comando `/help` para conhecer outras funções possíveis. Usando o comando `/help algum_comando`, por exemplo `/help coinflip`, você obterá as informações desse comando em específico.
+
+<u>Esse conteúdo é puramente educativo, baseado nas minhas próprias experiências. Utilize se quiser, com todo o cuidado e cautela. :)</u>
+
+Busquem conhecimento. Compartilhem experiências. Don’t Trust, Verify.
