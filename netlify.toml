@@ -1,0 +1,11 @@
+[build]
+  command = "gatsby build"
+  publish = "public"
+
+[[plugins]]
+  package = "netlify-plugin-gatsby-cache"
+
+[[redirects]]
+  from = "https://https://docs-hold-btc.netlify.app/"
+  to = "https://holdbtc100.com.br/"
+  status = 301
