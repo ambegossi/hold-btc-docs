@@ -9,3 +9,11 @@
   from = "/"
   to = "https://holdbtc100.com.br/"
   status = 301
+  force = true
+
+[[redirects]]
+  from = "https://docs-hold-btc.netlify.app/"
+  to = "https://holdbtc100.com.br/"
+  status = 301
+  force = true
+
