@@ -16,9 +16,3 @@
   to = "https://holdbtc100.com.br/"
   status = 301
   force = true
-
-[[redirects]]
-  from = "http://holdbtc100.com"
-  to = "https://holdbtc100.com.br/"
-  status = 301
-  force = true
