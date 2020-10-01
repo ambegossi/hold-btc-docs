@@ -23,7 +23,7 @@ module.exports = {
       resolve: `gatsby-plugin-manifest`,
       options: {
         name: `HOLD BTC`,
-        short_name: `BOLD BTC`,
+        short_name: `HOLD BTC`,
         start_url: `/`,
         background_color: `#ffffff`,
         display: `standalone`,
