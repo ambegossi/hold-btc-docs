@@ -42,7 +42,7 @@ Mais do que ganhar *free satoshis*, o *Bitcoin Bounce* é uma maneira de apresen
 
 ```md
 O LNTX Bot (t.me/lntxbot) é um bot para Telegram, que te permite,
-dentre várias funções fazer transações dentro da rede lightning 
+dentre várias funções fazer transações dentro da rede lightning
 entre usuários do Telegram.
 
 O bot cria um endereço lightning custodial,
@@ -57,18 +57,20 @@ Tendo em mãos sua carteira *lightning* principal, você pode acessar [este][5] 
 
 Para enviar os fundos da sua carteira principal para sua carteira no LNTX BOT, execute os seguintes comandos no chat com o bot:
 
-1. `/invoice`
-2. `/receive_XXX_for_something` (substitua XXX pelo número de satoshis que você deseja enviar a partir de sua carteira principal. Um endereço e um QR Code será gerado. Na sua carteira Lightning, você cola esse endereço na aba de envio.)
-3. Fundos recebidos? Confirme usando o comando `/balance` para verificar seus fundos no LNTX Bot.
+
+1. /invoice XXX, onde XXX é o valor em satoshis que deseja enviar da sua carteira Lightning principal
+para sua carteira no LNTX Bot.
+Um endereço será gerado. Copie o endereço e cole na tela de envio da sua carteira principal.
+2. Fundos recebidos? Confirme usando o comando `/balance` para verificar seus fundos no LNTX Bot.
    Agora, para fazer seus envios á outros usuários do Telegram, utilize os seguintes comando:
-4. Em um grupo que possua o LNTX Bot: `/tip XXX “Insira uma mensagem que queria mandar entre aspas”` (em resposta a uma mensagem), substituindo XXX pelo número de *satoshis* que quer enviar para quem publicou a mensagem que você está respondendo.
-5. No próprio bot: `/send XXX @id_do_usuario`, onde XXX é a quantidade de *satoshis*. Você pode verificar o id do usuário abrindo o contato dele no Telegram.
-6. Para enviar os fundos da sua carteira no LNTX Bot para sua carteira *lightning* principal, cole seu endereço de recebimento da carteira *lightning* principal no chat com o bot. Em seguida, ele vai te responder alguma coisa. Então responda a mensagem digitando a quantidade de *satoshis* que você deseja enviar pra sua carteira *lightning* principal.
+3. Em um grupo que possua o LNTX Bot: `/tip XXX “Insira uma mensagem que queria mandar entre aspas”` (em resposta a uma mensagem), substituindo XXX pelo número de *satoshis* que quer enviar para quem publicou a mensagem que você está respondendo.
+4. No próprio bot: `/send XXX @id_do_usuario`, onde XXX é a quantidade de *satoshis*. Você pode verificar o id do usuário abrindo o contato dele no Telegram.
+5. Para enviar os fundos da sua carteira no LNTX Bot para sua carteira *lightning* principal, cole seu endereço de recebimento da carteira *lightning* principal no chat com o bot. Em seguida, ele vai te responder alguma coisa. Então responda a mensagem digitando a quantidade de *satoshis* que você deseja enviar pra sua carteira *lightning* principal.
 
 **Outras funções:**
 
 1. Usando o comando `/coinflip x y` em um grupo que possua o LTNX Bot, você gera uma espécie de loteria, onde, para entrar, o usuário deve clicar no botão enviado pelo Bot no grupo. Cada apostador entra com x satoshis, até que y usuários entrem no sorteio. Um dos usuário receberá todas as moedas que os demais apostaram.
-2. Semelhante ao *coinflip*, o comando `/giveflip x y` gera um sorteio onde os usuários não precisam entrar com uma aposta. 
+2. Semelhante ao *coinflip*, o comando `/giveflip x y` gera um sorteio onde os usuários não precisam entrar com uma aposta.
    A pessoa que gerou a loteria estará colocando o valor de x *satoshis* por todos os y usuários.
 3. `/giveaway x`, em um grupo com o LTNX Bot ativo, fornecerá x *satoshis* para o primeiro usuário que clicar na caixa de diálogo aberta pelo bot no grupo.
 4. `/gifts x`, no diálogo com o Bot, vai gerar um link, que pode ser enviado para qualquer moeda, valendo uma transação no valor de x *satoshis* dentro da rede *lightning*.
